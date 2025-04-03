@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortable and Filterable Table</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container { margin-top: 20px; }
+    .filter-input { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Registration Table</h1>
+    <input type="text" id="filterInput" class="form-control filter-input" placeholder="Filter by Name">
+    <table id="registrationTable" class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortTable(1)">Email</th>
+          <th onclick="sortTable(2)">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>prathamesh</td><td>prathamesh98@gmail.com</td><td>29</td></tr>
+        <tr><td>pranav sutar</td><td>pranavsutar22@gmail.com</td><td>34</td></tr>
+        <tr><td>harsh mane </td><td>harsh01@gmail.com</td><td>25</td></tr>
+        <tr><td>koustub jadhav</td><td>koustubhjadhav@gmail.com</td><td>30</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="registration.js"></script>
+</body>
+</html>
